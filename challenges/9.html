@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>Digital Filters, Meh</h1>
+<p>
+Astronomy, Astrophysics, Astrometry, Astrodynamics, AAAA
+</p>
+<p><p>Included is the simulation code for the attitude control loop for a satellite in orbit. A code reviewer said I made a pretty big mistake that could allow a star tracker to misbehave. Although my code is flawless, I put in some checks to make sure the star tracker can't misbehave anyways.</p>
+
+<p>Review the simulation I have running to see if a startracker can still mess with my filter. Oh, and I'll be giving you the attitude of the physical system as a quaternion, it would be too much work to figure out where a star tracker is oriented from star coordinates, right?</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>bcrypted answer</th>
+<td></td>
+</tr>
+<tr>
+<th>observations</th>
+<td>838</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>37</td>
+</tr>
+<tr>
+<th>points</th>
+<td>104</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+55765
+seconds, or
+about 15 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+38476
+seconds, or
+about 11 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<h2>solving teams:</h2>
+<p>solved by 37 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/1058.html'>VztekOverflow</a>
+</th>
+<td>
+2020-05-23 03:53:05 UTC
+</td>
+<td>
+5261
+seconds, or
+1.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1232.html'>Vim Appreciation Society</a>
+</th>
+<td>
+2020-05-23 05:24:59 UTC
+</td>
+<td>
+9201
+seconds, or
+2.56
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/88.html'>BLSGVT</a>
+</th>
+<td>
+2020-05-23 05:50:29 UTC
+</td>
+<td>
+13047
+seconds, or
+3.62
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1625.html'>1064CBread</a>
+</th>
+<td>
+2020-05-23 06:07:22 UTC
+</td>
+<td>
+14002
+seconds, or
+3.89
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/847.html'>Quit Playing Games With My Uart</a>
+</th>
+<td>
+2020-05-23 07:06:14 UTC
+</td>
+<td>
+17513
+seconds, or
+4.86
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/30.html'>DiceGang</a>
+</th>
+<td>
+2020-05-23 07:20:06 UTC
+</td>
+<td>
+18268
+seconds, or
+5.07
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/422.html'>perfect blue</a>
+</th>
+<td>
+2020-05-23 07:20:30 UTC
+</td>
+<td>
+18475
+seconds, or
+5.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/373.html'>PPP</a>
+</th>
+<td>
+2020-05-23 07:21:15 UTC
+</td>
+<td>
+18517
+seconds, or
+5.14
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/742.html'>BoozingAltitude</a>
+</th>
+<td>
+2020-05-23 07:21:24 UTC
+</td>
+<td>
+18532
+seconds, or
+5.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/102.html'>LittleNarwhals</a>
+</th>
+<td>
+2020-05-23 08:21:06 UTC
+</td>
+<td>
+22082
+seconds, or
+6.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/572.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2020-05-23 08:22:38 UTC
+</td>
+<td>
+16479
+seconds, or
+4.58
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1378.html'>madratz</a>
+</th>
+<td>
+2020-05-23 08:40:48 UTC
+</td>
+<td>
+17505
+seconds, or
+4.86
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/668.html'>Cyber Space</a>
+</th>
+<td>
+2020-05-23 09:41:01 UTC
+</td>
+<td>
+26888
+seconds, or
+7.47
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/737.html'>orbit_equation</a>
+</th>
+<td>
+2020-05-23 14:06:05 UTC
+</td>
+<td>
+28299
+seconds, or
+7.86
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/80.html'>TwoSixNine</a>
+</th>
+<td>
+2020-05-23 14:41:23 UTC
+</td>
+<td>
+44758
+seconds, or
+12.43
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/953.html'>Poland Can Into Space</a>
+</th>
+<td>
+2020-05-23 16:19:50 UTC
+</td>
+<td>
+50028
+seconds, or
+13.9
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1312.html'>mhackeroni</a>
+</th>
+<td>
+2020-05-23 18:56:21 UTC
+</td>
+<td>
+59446
+seconds, or
+16.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/22.html'>15FittyTree</a>
+</th>
+<td>
+2020-05-23 19:04:53 UTC
+</td>
+<td>
+60500
+seconds, or
+16.81
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/409.html'>Kessler&#39;s Insurrection Rebels and Baby Yoda (KIRBY)</a>
+</th>
+<td>
+2020-05-23 19:41:14 UTC
+</td>
+<td>
+62916
+seconds, or
+17.48
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1248.html'>Z-Fighters</a>
+</th>
+<td>
+2020-05-23 19:51:01 UTC
+</td>
+<td>
+63236
+seconds, or
+17.57
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1672.html'>go bucks</a>
+</th>
+<td>
+2020-05-23 20:06:00 UTC
+</td>
+<td>
+63730
+seconds, or
+17.7
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/29.html'>coalfirelabs</a>
+</th>
+<td>
+2020-05-23 20:08:40 UTC
+</td>
+<td>
+64544
+seconds, or
+17.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/487.html'>satpunks</a>
+</th>
+<td>
+2020-05-23 20:51:29 UTC
+</td>
+<td>
+67131
+seconds, or
+18.65
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/677.html'>APL</a>
+</th>
+<td>
+2020-05-23 21:14:28 UTC
+</td>
+<td>
+68508
+seconds, or
+19.03
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/955.html'>Samurai</a>
+</th>
+<td>
+2020-05-23 22:03:39 UTC
+</td>
+<td>
+71452
+seconds, or
+19.85
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1148.html'>Solar Wine</a>
+</th>
+<td>
+2020-05-23 22:20:22 UTC
+</td>
+<td>
+71027
+seconds, or
+19.73
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/654.html'>Saturn</a>
+</th>
+<td>
+2020-05-23 22:34:46 UTC
+</td>
+<td>
+72791
+seconds, or
+20.22
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1732.html'>mslc</a>
+</th>
+<td>
+2020-05-23 22:54:30 UTC
+</td>
+<td>
+74021
+seconds, or
+20.56
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/15.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2020-05-24 00:06:27 UTC
+</td>
+<td>
+78779
+seconds, or
+21.88
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/258.html'>The Additional Payphones</a>
+</th>
+<td>
+2020-05-24 00:32:14 UTC
+</td>
+<td>
+78374
+seconds, or
+21.77
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/248.html'>ADDVulcan</a>
+</th>
+<td>
+2020-05-24 02:16:45 UTC
+</td>
+<td>
+86625
+seconds, or
+24.06
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1682.html'>oasis</a>
+</th>
+<td>
+2020-05-24 05:26:51 UTC
+</td>
+<td>
+97981
+seconds, or
+27.22
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1398.html'>ALLES</a>
+</th>
+<td>
+2020-05-24 08:25:14 UTC
+</td>
+<td>
+103276
+seconds, or
+28.69
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1454.html'>Memorable, and possibly hilarious</a>
+</th>
+<td>
+2020-05-24 08:29:40 UTC
+</td>
+<td>
+44761
+seconds, or
+12.43
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/941.html'>BLAHAJ</a>
+</th>
+<td>
+2020-05-24 14:40:05 UTC
+</td>
+<td>
+130926
+seconds, or
+36.37
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/611.html'>Black Arrow</a>
+</th>
+<td>
+2020-05-24 20:06:02 UTC
+</td>
+<td>
+150407
+seconds, or
+41.78
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1599.html'>b01lers</a>
+</th>
+<td>
+2020-05-24 21:17:42 UTC
+</td>
+<td>
+154006
+seconds, or
+42.78
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

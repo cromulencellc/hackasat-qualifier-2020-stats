@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>That's not on my calendar</h1>
+<p>
+Payload Modules
+</p>
+<p><p>Time for a really gentle introduction to cFS and Cosmos, hopefully you can schedule time to learn it!</p>
+
+<p>Build instructions:</p>
+
+<p>$ ./setup.sh
+$ source ~/.bashrc
+$ rm Gemfile.lock
+$ bundle install</p>
+
+<p>Hint: You will need to enable telemetry locally on the satellite, the udp forwarder will provide it to you as TCP from there</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>bcrypted answer</th>
+<td></td>
+</tr>
+<tr>
+<th>observations</th>
+<td>884</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>52</td>
+</tr>
+<tr>
+<th>points</th>
+<td>80</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+48430
+seconds, or
+about 13 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+40789
+seconds, or
+about 11 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<h2>solving teams:</h2>
+<p>solved by 52 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/373.html'>PPP</a>
+</th>
+<td>
+2020-05-23 06:21:27 UTC
+</td>
+<td>
+7621
+seconds, or
+2.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/11.html'>The Oxford Selenites</a>
+</th>
+<td>
+2020-05-23 06:30:02 UTC
+</td>
+<td>
+7991
+seconds, or
+2.22
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/422.html'>perfect blue</a>
+</th>
+<td>
+2020-05-23 06:36:26 UTC
+</td>
+<td>
+8521
+seconds, or
+2.37
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/193.html'>MNDT</a>
+</th>
+<td>
+2020-05-23 06:51:59 UTC
+</td>
+<td>
+9345
+seconds, or
+2.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/248.html'>ADDVulcan</a>
+</th>
+<td>
+2020-05-23 06:53:41 UTC
+</td>
+<td>
+9151
+seconds, or
+2.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/955.html'>Samurai</a>
+</th>
+<td>
+2020-05-23 06:55:06 UTC
+</td>
+<td>
+9686
+seconds, or
+2.69
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1186.html'>Satisfactory / DNF</a>
+</th>
+<td>
+2020-05-23 06:56:44 UTC
+</td>
+<td>
+9686
+seconds, or
+2.69
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/628.html'>SGAC</a>
+</th>
+<td>
+2020-05-23 07:00:03 UTC
+</td>
+<td>
+9818
+seconds, or
+2.73
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/941.html'>BLAHAJ</a>
+</th>
+<td>
+2020-05-23 07:10:12 UTC
+</td>
+<td>
+10599
+seconds, or
+2.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/30.html'>DiceGang</a>
+</th>
+<td>
+2020-05-23 07:32:01 UTC
+</td>
+<td>
+11789
+seconds, or
+3.27
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/959.html'>PFS</a>
+</th>
+<td>
+2020-05-23 07:48:35 UTC
+</td>
+<td>
+12814
+seconds, or
+3.56
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/487.html'>satpunks</a>
+</th>
+<td>
+2020-05-23 08:06:50 UTC
+</td>
+<td>
+13842
+seconds, or
+3.84
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/662.html'>📡🐺🔥🔥🔥</a>
+</th>
+<td>
+2020-05-23 08:13:32 UTC
+</td>
+<td>
+14339
+seconds, or
+3.98
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/611.html'>Black Arrow</a>
+</th>
+<td>
+2020-05-23 08:46:08 UTC
+</td>
+<td>
+15963
+seconds, or
+4.43
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/39.html'>Stay-at-home space pirates</a>
+</th>
+<td>
+2020-05-23 09:03:23 UTC
+</td>
+<td>
+17284
+seconds, or
+4.8
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1078.html'>praetorianguard</a>
+</th>
+<td>
+2020-05-23 09:12:45 UTC
+</td>
+<td>
+17849
+seconds, or
+4.96
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/213.html'>vaporsec</a>
+</th>
+<td>
+2020-05-23 09:43:45 UTC
+</td>
+<td>
+19706
+seconds, or
+5.47
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1398.html'>ALLES</a>
+</th>
+<td>
+2020-05-23 10:52:51 UTC
+</td>
+<td>
+22717
+seconds, or
+6.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1148.html'>Solar Wine</a>
+</th>
+<td>
+2020-05-23 11:02:31 UTC
+</td>
+<td>
+20284
+seconds, or
+5.63
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/572.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2020-05-23 13:13:02 UTC
+</td>
+<td>
+29806
+seconds, or
+8.28
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/847.html'>Quit Playing Games With My Uart</a>
+</th>
+<td>
+2020-05-23 13:46:10 UTC
+</td>
+<td>
+34225
+seconds, or
+9.51
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/479.html'>SG-BTBLP</a>
+</th>
+<td>
+2020-05-23 13:49:06 UTC
+</td>
+<td>
+34516
+seconds, or
+9.59
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/598.html'>Shift5</a>
+</th>
+<td>
+2020-05-23 14:25:40 UTC
+</td>
+<td>
+36334
+seconds, or
+10.09
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1312.html'>mhackeroni</a>
+</th>
+<td>
+2020-05-23 14:26:59 UTC
+</td>
+<td>
+30268
+seconds, or
+8.41
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/102.html'>LittleNarwhals</a>
+</th>
+<td>
+2020-05-23 14:42:21 UTC
+</td>
+<td>
+37728
+seconds, or
+10.48
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/40.html'>ACE</a>
+</th>
+<td>
+2020-05-23 14:53:08 UTC
+</td>
+<td>
+37949
+seconds, or
+10.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1058.html'>VztekOverflow</a>
+</th>
+<td>
+2020-05-23 15:19:38 UTC
+</td>
+<td>
+39782
+seconds, or
+11.05
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/80.html'>TwoSixNine</a>
+</th>
+<td>
+2020-05-23 15:41:53 UTC
+</td>
+<td>
+41180
+seconds, or
+11.44
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/717.html'>Flat Earth Society - Jovian Chapter</a>
+</th>
+<td>
+2020-05-23 15:52:49 UTC
+</td>
+<td>
+26402
+seconds, or
+7.33
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/15.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2020-05-23 16:02:14 UTC
+</td>
+<td>
+41890
+seconds, or
+11.64
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/953.html'>Poland Can Into Space</a>
+</th>
+<td>
+2020-05-23 17:18:23 UTC
+</td>
+<td>
+44460
+seconds, or
+12.35
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1099.html'>Kyrus Tech</a>
+</th>
+<td>
+2020-05-23 19:20:06 UTC
+</td>
+<td>
+54311
+seconds, or
+15.09
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/677.html'>APL</a>
+</th>
+<td>
+2020-05-23 19:45:54 UTC
+</td>
+<td>
+55923
+seconds, or
+15.53
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/849.html'>5C0U7</a>
+</th>
+<td>
+2020-05-23 21:06:01 UTC
+</td>
+<td>
+60666
+seconds, or
+16.85
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/379.html'>MIL-STD-31337</a>
+</th>
+<td>
+2020-05-23 22:04:20 UTC
+</td>
+<td>
+64162
+seconds, or
+17.82
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1489.html'>JonPwnJones</a>
+</th>
+<td>
+2020-05-23 22:11:04 UTC
+</td>
+<td>
+37333
+seconds, or
+10.37
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1247.html'>dunk_on_perigee</a>
+</th>
+<td>
+2020-05-23 23:08:44 UTC
+</td>
+<td>
+32144
+seconds, or
+8.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1248.html'>Z-Fighters</a>
+</th>
+<td>
+2020-05-23 23:22:18 UTC
+</td>
+<td>
+68878
+seconds, or
+19.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/630.html'>ACMEPharm</a>
+</th>
+<td>
+2020-05-24 00:00:54 UTC
+</td>
+<td>
+71204
+seconds, or
+19.78
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/340.html'>CTF_Circle</a>
+</th>
+<td>
+2020-05-24 00:05:25 UTC
+</td>
+<td>
+67547
+seconds, or
+18.76
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1682.html'>oasis</a>
+</th>
+<td>
+2020-05-24 00:34:28 UTC
+</td>
+<td>
+73161
+seconds, or
+20.32
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1187.html'>blackh0le</a>
+</th>
+<td>
+2020-05-24 00:45:34 UTC
+</td>
+<td>
+68875
+seconds, or
+19.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/409.html'>Kessler&#39;s Insurrection Rebels and Baby Yoda (KIRBY)</a>
+</th>
+<td>
+2020-05-24 02:49:38 UTC
+</td>
+<td>
+81363
+seconds, or
+22.6
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/810.html'>sgolo</a>
+</th>
+<td>
+2020-05-24 05:11:58 UTC
+</td>
+<td>
+89737
+seconds, or
+24.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/971.html'>The Core</a>
+</th>
+<td>
+2020-05-24 05:28:35 UTC
+</td>
+<td>
+90453
+seconds, or
+25.13
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1886.html'>don&#39;t worry we are not eligible for prize | Tank Man</a>
+</th>
+<td>
+2020-05-24 14:05:29 UTC
+</td>
+<td>
+93236
+seconds, or
+25.9
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/135.html'>crayontheft</a>
+</th>
+<td>
+2020-05-24 14:48:32 UTC
+</td>
+<td>
+109059
+seconds, or
+30.29
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1672.html'>go bucks</a>
+</th>
+<td>
+2020-05-24 18:35:15 UTC
+</td>
+<td>
+137524
+seconds, or
+38.2
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/425.html'>All your space are belong to us</a>
+</th>
+<td>
+2020-05-24 18:48:02 UTC
+</td>
+<td>
+138184
+seconds, or
+38.38
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1027.html'>0daysober</a>
+</th>
+<td>
+2020-05-24 20:12:49 UTC
+</td>
+<td>
+142901
+seconds, or
+39.69
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/334.html'>Sloppy Joe Pirates</a>
+</th>
+<td>
+2020-05-24 21:00:39 UTC
+</td>
+<td>
+146711
+seconds, or
+40.75
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/22.html'>15FittyTree</a>
+</th>
+<td>
+2020-05-24 22:36:43 UTC
+</td>
+<td>
+151457
+seconds, or
+42.07
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

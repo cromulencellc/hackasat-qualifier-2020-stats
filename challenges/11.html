@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hack-A-Sat Quals Data Dump</title>
+<link href='statdump.css' media='all' rel='stylesheet'>
+<meta charset='utf-8'>
+</head>
+<body>
+<div id='content'>
+<nav>
+<ul>
+<li>
+<a href='../challenges.html'>All Challenges</a>
+</li>
+<li>
+<a href='../index.html'>Statdump Root</a>
+</li>
+</ul>
+</nav>
+<h1>SpaceBook</h1>
+<p>
+Astronomy, Astrophysics, Astrometry, Astrodynamics, AAAA
+</p>
+<p><p>Hah, yeah we're going to do the hard part anyways! Glue all previous parts together by identifying these stars based on the provided catalog. Match the provided boresight refence vectors to the catalog refence vectors and tell us our attitude.</p>
+
+<p>Note: The catalog format is unit vector (X,Y,Z) in a celestial reference frame and the magnitude (relative brightness)</p>
+</p>
+<h1>Solution Statistics</h1>
+<table>
+<tbody>
+<tr>
+<th>bcrypted answer</th>
+<td></td>
+</tr>
+<tr>
+<th>observations</th>
+<td>704</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>56</td>
+</tr>
+<tr>
+<th>points</th>
+<td>75</td>
+</tr>
+<tr>
+<th>average solve seconds</th>
+<td>
+41124
+seconds, or
+about 11 hours
+</td>
+</tr>
+<tr>
+<th>stddev solve time</th>
+<td>
+41596
+seconds, or
+about 12 hours
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions Over Time</h2>
+<h2>solving teams:</h2>
+<p>solved by 56 teams</p>
+<table>
+<thead>
+<tr>
+<th>team</th>
+<th>solved at</th>
+<th>it took</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href='../teams/373.html'>PPP</a>
+</th>
+<td>
+2020-05-23 06:38:10 UTC
+</td>
+<td>
+532
+seconds, or
+0.15
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/425.html'>All your space are belong to us</a>
+</th>
+<td>
+2020-05-23 06:42:58 UTC
+</td>
+<td>
+752
+seconds, or
+0.21
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/409.html'>Kessler&#39;s Insurrection Rebels and Baby Yoda (KIRBY)</a>
+</th>
+<td>
+2020-05-23 06:46:13 UTC
+</td>
+<td>
+1006
+seconds, or
+0.28
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1625.html'>1064CBread</a>
+</th>
+<td>
+2020-05-23 06:58:50 UTC
+</td>
+<td>
+1770
+seconds, or
+0.49
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/487.html'>satpunks</a>
+</th>
+<td>
+2020-05-23 07:00:07 UTC
+</td>
+<td>
+1803
+seconds, or
+0.5
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/941.html'>BLAHAJ</a>
+</th>
+<td>
+2020-05-23 07:01:35 UTC
+</td>
+<td>
+1921
+seconds, or
+0.53
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/871.html'>BattleSnail</a>
+</th>
+<td>
+2020-05-23 07:02:34 UTC
+</td>
+<td>
+1747
+seconds, or
+0.49
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/30.html'>DiceGang</a>
+</th>
+<td>
+2020-05-23 07:14:12 UTC
+</td>
+<td>
+1153
+seconds, or
+0.32
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/959.html'>PFS</a>
+</th>
+<td>
+2020-05-23 07:15:38 UTC
+</td>
+<td>
+2662
+seconds, or
+0.74
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1582.html'>codeflight</a>
+</th>
+<td>
+2020-05-23 07:19:13 UTC
+</td>
+<td>
+2916
+seconds, or
+0.81
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/955.html'>Samurai</a>
+</th>
+<td>
+2020-05-23 07:32:14 UTC
+</td>
+<td>
+3565
+seconds, or
+0.99
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/810.html'>sgolo</a>
+</th>
+<td>
+2020-05-23 07:44:54 UTC
+</td>
+<td>
+4474
+seconds, or
+1.24
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/544.html'>br0s</a>
+</th>
+<td>
+2020-05-23 07:50:35 UTC
+</td>
+<td>
+4328
+seconds, or
+1.2
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1148.html'>Solar Wine</a>
+</th>
+<td>
+2020-05-23 08:14:45 UTC
+</td>
+<td>
+3775
+seconds, or
+1.05
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/572.html'>OneSmallHackForMan</a>
+</th>
+<td>
+2020-05-23 08:20:52 UTC
+</td>
+<td>
+6546
+seconds, or
+1.82
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/479.html'>SG-BTBLP</a>
+</th>
+<td>
+2020-05-23 08:52:34 UTC
+</td>
+<td>
+8329
+seconds, or
+2.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1012.html'>SQLinfection</a>
+</th>
+<td>
+2020-05-23 09:26:15 UTC
+</td>
+<td>
+9584
+seconds, or
+2.66
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1187.html'>blackh0le</a>
+</th>
+<td>
+2020-05-23 11:07:14 UTC
+</td>
+<td>
+10760
+seconds, or
+2.99
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/834.html'>misc</a>
+</th>
+<td>
+2020-05-23 11:23:40 UTC
+</td>
+<td>
+17442
+seconds, or
+4.85
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1312.html'>mhackeroni</a>
+</th>
+<td>
+2020-05-23 11:25:21 UTC
+</td>
+<td>
+14679
+seconds, or
+4.08
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/41.html'>STRship Troopers</a>
+</th>
+<td>
+2020-05-23 11:35:10 UTC
+</td>
+<td>
+12160
+seconds, or
+3.38
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/15.html'>FluxRepeatRocket</a>
+</th>
+<td>
+2020-05-23 12:40:29 UTC
+</td>
+<td>
+21994
+seconds, or
+6.11
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/717.html'>Flat Earth Society - Jovian Chapter</a>
+</th>
+<td>
+2020-05-23 13:35:10 UTC
+</td>
+<td>
+10781
+seconds, or
+2.99
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1058.html'>VztekOverflow</a>
+</th>
+<td>
+2020-05-23 14:08:27 UTC
+</td>
+<td>
+27074
+seconds, or
+7.52
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1378.html'>madratz</a>
+</th>
+<td>
+2020-05-23 14:26:21 UTC
+</td>
+<td>
+27160
+seconds, or
+7.54
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/677.html'>APL</a>
+</th>
+<td>
+2020-05-23 14:39:03 UTC
+</td>
+<td>
+26643
+seconds, or
+7.4
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/953.html'>Poland Can Into Space</a>
+</th>
+<td>
+2020-05-23 15:13:25 UTC
+</td>
+<td>
+30165
+seconds, or
+8.38
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1041.html'>Team Doom</a>
+</th>
+<td>
+2020-05-23 15:38:21 UTC
+</td>
+<td>
+32215
+seconds, or
+8.95
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/22.html'>15FittyTree</a>
+</th>
+<td>
+2020-05-23 16:09:15 UTC
+</td>
+<td>
+30500
+seconds, or
+8.47
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/422.html'>perfect blue</a>
+</th>
+<td>
+2020-05-23 16:51:47 UTC
+</td>
+<td>
+37117
+seconds, or
+10.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1248.html'>Z-Fighters</a>
+</th>
+<td>
+2020-05-23 16:51:49 UTC
+</td>
+<td>
+37332
+seconds, or
+10.37
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1682.html'>oasis</a>
+</th>
+<td>
+2020-05-23 17:12:16 UTC
+</td>
+<td>
+13622
+seconds, or
+3.78
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/741.html'>Shellphish</a>
+</th>
+<td>
+2020-05-23 18:09:41 UTC
+</td>
+<td>
+41670
+seconds, or
+11.57
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1398.html'>ALLES</a>
+</th>
+<td>
+2020-05-23 18:22:03 UTC
+</td>
+<td>
+39553
+seconds, or
+10.99
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/619.html'>LEGOFAN</a>
+</th>
+<td>
+2020-05-23 18:39:36 UTC
+</td>
+<td>
+41300
+seconds, or
+11.47
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/627.html'>Spaceball One</a>
+</th>
+<td>
+2020-05-23 20:05:57 UTC
+</td>
+<td>
+32787
+seconds, or
+9.11
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1672.html'>go bucks</a>
+</th>
+<td>
+2020-05-23 20:31:41 UTC
+</td>
+<td>
+50405
+seconds, or
+14.0
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1333.html'>Cybernauticals</a>
+</th>
+<td>
+2020-05-23 20:41:39 UTC
+</td>
+<td>
+38283
+seconds, or
+10.63
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1480.html'>lusers</a>
+</th>
+<td>
+2020-05-23 21:03:13 UTC
+</td>
+<td>
+9830
+seconds, or
+2.73
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1732.html'>mslc</a>
+</th>
+<td>
+2020-05-23 23:43:36 UTC
+</td>
+<td>
+53330
+seconds, or
+14.81
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1689.html'>cr0wn</a>
+</th>
+<td>
+2020-05-24 00:00:03 UTC
+</td>
+<td>
+48800
+seconds, or
+13.56
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/40.html'>ACE</a>
+</th>
+<td>
+2020-05-24 01:31:12 UTC
+</td>
+<td>
+68442
+seconds, or
+19.01
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/668.html'>Cyber Space</a>
+</th>
+<td>
+2020-05-24 02:49:13 UTC
+</td>
+<td>
+73105
+seconds, or
+20.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/248.html'>ADDVulcan</a>
+</th>
+<td>
+2020-05-24 04:17:53 UTC
+</td>
+<td>
+78362
+seconds, or
+21.77
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1158.html'>Clutch Space Systems</a>
+</th>
+<td>
+2020-05-24 07:38:29 UTC
+</td>
+<td>
+89475
+seconds, or
+24.85
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1110.html'>cyberwehr</a>
+</th>
+<td>
+2020-05-24 10:33:29 UTC
+</td>
+<td>
+92299
+seconds, or
+25.64
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1428.html'>hackasat_zeyden</a>
+</th>
+<td>
+2020-05-24 14:23:43 UTC
+</td>
+<td>
+91126
+seconds, or
+25.31
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1910.html'>GeeseWithTeeth</a>
+</th>
+<td>
+2020-05-24 14:55:15 UTC
+</td>
+<td>
+111337
+seconds, or
+30.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1240.html'>An Elongated Muskrat</a>
+</th>
+<td>
+2020-05-24 15:00:42 UTC
+</td>
+<td>
+93441
+seconds, or
+25.96
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/755.html'>StrangleHold</a>
+</th>
+<td>
+2020-05-24 16:05:11 UTC
+</td>
+<td>
+120583
+seconds, or
+33.5
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/940.html'>mars</a>
+</th>
+<td>
+2020-05-24 16:32:05 UTC
+</td>
+<td>
+112019
+seconds, or
+31.12
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1628.html'>beep</a>
+</th>
+<td>
+2020-05-24 17:48:49 UTC
+</td>
+<td>
+94574
+seconds, or
+26.27
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/1123.html'>inyalowdas</a>
+</th>
+<td>
+2020-05-24 18:59:46 UTC
+</td>
+<td>
+125731
+seconds, or
+34.93
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/102.html'>LittleNarwhals</a>
+</th>
+<td>
+2020-05-24 19:27:30 UTC
+</td>
+<td>
+132986
+seconds, or
+36.94
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/78.html'>gooseDOTbiz</a>
+</th>
+<td>
+2020-05-24 20:26:03 UTC
+</td>
+<td>
+134840
+seconds, or
+37.46
+hours
+</td>
+</tr>
+<tr>
+<th>
+<a href='../teams/445.html'>Red 5</a>
+</th>
+<td>
+2020-05-24 23:01:51 UTC
+</td>
+<td>
+122169
+seconds, or
+33.94
+hours
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
